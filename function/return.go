@@ -5,7 +5,7 @@ import (
 )
 
 // name return
-func slice_sum(arr []int) (sum int) {
+func sliceSum(arr []int) (sum int) {
 	sum = 0
 	for _, elem := range arr {
 		sum += elem
@@ -14,7 +14,7 @@ func slice_sum(arr []int) (sum int) {
 }
 
 // mutli retrun
-func slice_sum1(arr []int) (int, float64) {
+func sliceSum1(arr []int) (int, float64) {
 	sum := 0
 	avg := 0.0
 	for _, elem := range arr {
@@ -26,6 +26,6 @@ func slice_sum1(arr []int) (int, float64) {
 
 func main() {
 	var arr = []int{1, 2, 3, 4, 5}
-	fmt.Println(slice_sum(arr))
-	fmt.Println(slice_sum1(arr))
+	fmt.Println(sliceSum(arr))
+	fmt.Println(sliceSum1(arr))
 }
